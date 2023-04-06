@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #040c18;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 40px 0;
+}
+nav {
+    height: 100px;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.nav__link {
+    display: flex;
+}
+
+.nav__links {
+    font-weight: 700;
+    padding-left: 16px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    background: linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container {
+    padding-top: 80px;
+}
+
+.home__description {
+    align-items: center;
+    -webkit-animation: fade-in .8s .4s backwards;
+    animation: fade-in .8s .4s backwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__description>h1, .home__description>h2 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(89.97deg,#ae67fa 1.84%,#f49867 102.67%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+}
+
+.input__holder {
+    max-width: 800px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.input__holder>input, button {
+    background: linear-gradient(89.97deg,#ae67fa 1.84%,#f49867 102.67%);
+}
+.input__holder>input {
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    height: 70px;
+    outline: none;
+    padding: 12px;
+    width: 700px;
+}
+
+.btn__home {
+     width: 500px;
+     height: 70px;
+     border-radius: 4px;
+     margin: 0 24px;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.btn__movie {
+    width: 150px;
+    height: 70px;
+    border-radius: 4px;
+    margin: 0 24px;
+   -webkit-tap-highlight-color: transparent;
+   background-color: transparent;
+   cursor: pointer;
+
+}
+
+i {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+
+
+/*
+
+MOVIES
+
+*/
+
+
+.movies__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.showmovies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.title, .year, .imd, .type {
+    color: #f49867;
+}
+
+.title {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.movies__loading--spinner {
+    display: none !important;
+  }
+  
+  .movies__loading .books__loading--spinner {
+    display: block !important;
+  }
+  
+  
