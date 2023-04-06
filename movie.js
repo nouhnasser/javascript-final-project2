@@ -20,8 +20,8 @@ async function main() {
 
     moviesHTML.innerHTML = moviesHTMLContent;
   } else {
-    console.error('No movies found');
+    console.error('No movies found ');
   }
 }
 
-main();
+main( );
